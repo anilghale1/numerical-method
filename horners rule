@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<conio.h>
+
+// int poly(x0)
+// {
+// 	return 3*x0*x0*x0-(4*x0*x0)+5*x0-(6);
+// }
+  int main()
+  {
+  	  int x,degree,b,a[10];
+  	  int i=0;
+  	  printf("enter degree :\n");
+  	  scanf("%d",&degree);
+  	  
+  	  printf("enter coefficient :");
+  	  for(i=0;i<=degree;i++)
+  	  {
+  	  	 scanf("%d",&a[i]);
+  	  	
+		}
+		
+//		for(i=0;i<=degree;i++)
+//		{
+//				a[i]=coef[i];
+//			
+//		}
+		
+		printf("enter value of x : ");
+		scanf("%d",&x);
+		b=a[degree];
+		
+  	  for(i=degree-1;i>=0;i--)
+  	  {
+  	  	 b=a[i]+b*x;
+  	  	
+		}
+		printf("%d\n",b);
+  	  
+  	  
+  	  
+  	  
+  	  
+  	  
+  	  
+  	  
+  	  
+//  	  result=poly(x);
+//  	  printf("required result is %d",result);
+  	  
+  	  	return 0;
+  }
